@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFormula"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:src="@drawable/pic1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChape"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Yassi to'rtburchak sezgir element tamoni o'lchamini kiriting (m)"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/ivFormula"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A ="
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChape"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etA"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvA"
+        app:layout_constraintTop_toTopOf="@id/tvA"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvA"
+        app:layout_constraintTop_toBottomOf="@id/tvA"
+        android:text="B ="
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etB"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etA"
+        app:layout_constraintTop_toBottomOf="@id/etA"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Yassi to'rtburchak sezgir element o'ramlari sonini kiriting"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvB"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvWn"
+        android:text="W ="
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/tvB"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etW"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvW"
+        app:layout_constraintTop_toTopOf="@id/tvW"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Yassi element va o'tkazgich o'rtasidagi havo oralig'ini kiriting (m)"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvW"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvL"
+        app:layout_constraintStart_toStartOf="@id/tvA"
+        android:text="l ="
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etL"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvl"
+        app:layout_constraintTop_toTopOf="@id/tvl"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvIA"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="O'tkazgichdan oqib o'tuvchi tok qiymati"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvl"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvIA"
+        app:layout_constraintStart_toStartOf="@id/tvIA"
+        android:text="I ="
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etI"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvI"
+        app:layout_constraintTop_toTopOf="@id/tvI"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tvAns"
+        app:layout_constraintTop_toBottomOf="@id/tvI"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/img"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAnsNum"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/tvAns"
+        app:layout_constraintTop_toTopOf="@id/tvAns"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/baseline_play_circle_filled_24"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
